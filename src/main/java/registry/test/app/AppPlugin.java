@@ -49,7 +49,7 @@ public class AppPlugin extends Registry<IAppContainer, Application, CDMRegister>
                                 ApplicationManager.registerApplication(app.getAppId(), cls);
                             }
                         }else{
-                            MrCrayfishDeviceMod.proxy.registerApplication(app.getAppId(), cls);
+                            ApplicationManager.registerApplication(app.getAppId(), cls);
                         }
                     }
                 }
@@ -58,7 +58,7 @@ public class AppPlugin extends Registry<IAppContainer, Application, CDMRegister>
     }
 
     private static IAppContainer newAppContainer(CDMRegister app, Class<? extends Application> clazz){
-        MrCrayfishDeviceMod.getLogger().info("Constructing new app container...");
+        MrCrayfishDeviceMod.getLogger().info("Constructing new apps container...");
         final IAppContainer ret = new IAppContainer(){
 
             @Override

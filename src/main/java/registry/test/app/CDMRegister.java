@@ -6,10 +6,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
-@Retention(RetentionPolicy.CLASS)
+@Retention(RetentionPolicy.RUNTIME)
 public @interface CDMRegister {
     String modid();
     String appId();
-    boolean isDebug();
-    boolean isSystem();
+    boolean isDebug() default false;
+    boolean isSystem() default false;
 }
