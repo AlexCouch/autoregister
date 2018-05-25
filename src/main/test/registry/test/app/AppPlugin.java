@@ -72,11 +72,6 @@ public class AppPlugin extends Registry<IAppContainer, Application, CDMRegister>
             }
 
             @Override
-            public boolean isSystem() {
-                return app.isSystem();
-            }
-
-            @Override
             public boolean isDebug(){
                 return app.isDebug();
             }

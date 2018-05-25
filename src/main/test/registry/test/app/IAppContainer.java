@@ -7,5 +7,4 @@ import registry.RegistryItem;
 public interface IAppContainer extends RegistryItem<Class<? extends Application>> {
     ResourceLocation getAppId();
     boolean isDebug();
-    boolean isSystem();
 }

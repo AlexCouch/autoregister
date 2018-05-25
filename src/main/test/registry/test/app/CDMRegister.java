@@ -11,5 +11,4 @@ public @interface CDMRegister {
     String modid();
     String appId();
     boolean isDebug() default false;
-    boolean isSystem() default false;
 }
